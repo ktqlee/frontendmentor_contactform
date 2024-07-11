@@ -20,7 +20,9 @@
   <form>
     <h1>Contact Us</h1>
 
+    <!-- name -->
     <div class="two_col_row">
+
       <!-- first name -->
       <div class="form_row name first_col">
         <label for="firstname">
@@ -31,7 +33,6 @@
         </label>
         <p class="error required"></p>
       </div>
-    
 
       <!-- last name -->
       <div class="form_row name second_col">
@@ -43,6 +44,7 @@
         </label>
         <p class="error required"></p>
       </div>
+
     </div>
 
     <!-- email -->
@@ -58,27 +60,29 @@
     </div>
 
 
-    <div class="two_col_row">
-      <!-- Query Type -->
-      <div class="form_row"> 
-        <p>Query Type <span class="required_char">*</span></p>
+    <!-- Query Type -->
+    <div class="form_row query"> 
+      <p>Query Type <span class="required_char">*</span></p>
 
-        <label for="general_enquiry" class="enquiry first_col">
+      <div class="two_col_row">
+
+        <label for="general_enquiry first_col" class="enquiry">
 
           <input id="general_enquiry" name="QueryType" value="General Enquiry" type="radio">
           General Enquiry
 
         </label>
 
-        <label for="support_request" class="enquiry second_col">
+        <label for="support_request second_col" class="enquiry">
 
           <input id="support_request" name="QueryType" value="Support Request" type="radio">
           Support Request
 
         </label>
-
-        <p class="error required_query"></p>
+        
       </div>
+
+      <p class="error required_query"></p>
     </div>
     
 
