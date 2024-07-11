@@ -9,86 +9,100 @@
   <title>Frontend Mentor | Contact form</title>
 
   <link rel="stylesheet" href="style.css">
+
+  <!-- font family -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+
 </head>
 <body>
   <form>
     <h1>Contact Us</h1>
 
-    <div class="form_col name">
-      <label for="firstname">
+    <div class="two_col_row">
+      <!-- first name -->
+      <div class="form_row name first_col">
+        <label for="firstname">
 
-        <p>First Name <span class="required_char">*</span></p>
-        <input id="firstname" name="firstname" type="text" required>
+          <p>First Name <span class="required_char">*</span></p>
+          <input id="firstname" name="firstname" type="text" required>
 
-      </label>
-      <p class="error_required">This field is required</p>
+        </label>
+        <p class="error required"></p>
+      </div>
+    
+
+      <!-- last name -->
+      <div class="form_row name second_col">
+        <label for="lastname">
+
+          <p>Last Name <span class="required_char">*</span></p>
+          <input id="lastname" name="lastname" type="text" required>
+
+        </label>
+        <p class="error required"></p>
+      </div>
     </div>
 
-
-    <div class="form_col name">
-      <label for="lastname">
-
-        <p>Last Name <span class="required_char">*</span></p>
-        <input id="lastname" name="lastname" type="text" required>
-
-      </label>
-      <p class="error_required">This field is required</p>
-    </div>
-
-
-    <div class="form_col">
+    <!-- email -->
+    <div class="form_row">
       <label for="email">
 
-        Email Address <span class="required_char">*</span>
+        <p>Email Address <span class="required_char">*</span></p>
         <input id="email" name="email" type="text" required>
 
       </label>
-      <p class="invalid_email">Please enter a valid email address</p>
-      <p class="error_required">This field is required</p>
+      <p class="error invalid_email"></p>
+      <p class="error required"></p>
     </div>
 
 
-    <!-- Query Type -->
-    <div class="form_col"> 
-      Query Type <span class="required_char">*</span>
+    <div class="two_col_row">
+      <!-- Query Type -->
+      <div class="form_row"> 
+        <p>Query Type <span class="required_char">*</span></p>
 
-      <label for="general_enquiry">
+        <label for="general_enquiry" class="enquiry first_col">
 
-        <input id="general_enquiry" name="QueryType" value="General Enquiry" type="radio">
-        General Enquiry
+          <input id="general_enquiry" name="QueryType" value="General Enquiry" type="radio">
+          General Enquiry
 
-      </label>
+        </label>
 
-      <label for="support_request">
+        <label for="support_request" class="enquiry second_col">
 
-        <input id="support_request" name="QueryType" value="Support Request" type="radio">
-        Support Request
+          <input id="support_request" name="QueryType" value="Support Request" type="radio">
+          Support Request
 
-      </label>
+        </label>
 
-      <p class="error_required">Please select a query type</p>
+        <p class="error required_query"></p>
+      </div>
     </div>
     
 
-    <div class="form_col"> 
+    <!-- message -->
+    <div class="form_row"> 
       <label for="message">
 
-        Message <span class="required_char">*</span>
+        <p>Message <span class="required_char">*</span></p>
         <textarea id="message" name="message"></textarea>
 
       </label>
-      <p class="error_required">This field is required</p>
+      <p class="error required"></p>
     </div>
 
 
-    <div class="form_col"> 
+    <!-- consent -->
+    <div class="form_row"> 
       <label for="consent">
 
         <input id="consent" name="consent" type="checkbox" required>
         I consent to being contacted by the team <span class="required_char">*</span>
 
       </label>
-      <p class="error_required">To submit this form, please consent to being contacted</p>
+      <p class="error required_consent"></p>
     </div>
 
 
@@ -102,6 +116,8 @@
     </p> -->
     
   </footer>
+
+  <script src="index.js"></script>
 </body>
 </html>
 
