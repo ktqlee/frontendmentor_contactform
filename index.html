@@ -64,22 +64,23 @@
     <div class="form_row query"> 
       <p>Query Type <span class="required_char">*</span></p>
 
-      <div class="two_col_row">
+      <div class="two_col_row query_container">
 
-        <label for="general_enquiry first_col" class="enquiry">
-
-          <input id="general_enquiry" name="QueryType" value="General Enquiry" type="radio">
-          General Enquiry
-
-        </label>
-
-        <label for="support_request second_col" class="enquiry">
-
-          <input id="support_request" name="QueryType" value="Support Request" type="radio">
-          Support Request
-
-        </label>
         
+        <label for="general_enquiry" class="enquiry first_col">
+
+          <input id="general_enquiry" name="QueryType" value="General Enquiry" class="queryinput" type="radio">
+          <p class="enquiry_text">General Enquiry</p>
+
+        </label>
+
+        <label for="support_request" class="enquiry enquiry_second_col">
+
+          <input id="support_request" name="QueryType" value="Support Request" class="queryinput" type="radio">
+          <p class="enquiry_text">Support Request</p>
+
+        </label>
+
       </div>
 
       <p class="error required_query"></p>
@@ -103,7 +104,7 @@
       <label for="consent">
 
         <input id="consent" name="consent" type="checkbox" required>
-        I consent to being contacted by the team <span class="required_char">*</span>
+        <p class="p_consent">I consent to being contacted by the team <span class="required_char">*</span></p>
 
       </label>
       <p class="error required_consent"></p>

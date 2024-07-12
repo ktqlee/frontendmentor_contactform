@@ -37,13 +37,14 @@ h1{
     display: flex;
     justify-content: space-between;
 }
-.first_col .second_col{
+.first_col, .second_col, .enquiry_second_col{
     display: inline-block;
     width: 48%;
 }
 .second_col{
     padding-left: 4%;
 }
+
 
 /* For first name & last name */
 .form_row.name input{
@@ -60,6 +61,9 @@ input{
     height: 2.2rem;
     margin: 0;
     margin-top: 8px;
+
+    /* Align radio/checkbox input with text */
+    vertical-align: middle;
 }
 
 /* input for email */
@@ -67,12 +71,25 @@ input{
     width: 100%;
 }
 
+label > p{
+    display: inline-block;
+}
+
 /* query type */
+.query{
+    margin-top: 0;
+}
+.query_container{
+    margin-top: 8px;
+}
 .enquiry{
     border: 1px solid hsl(169, 82%, 27%);
     border-radius: 6px;
     display: inline-block;
     width: 48%;
+}
+.queryinput{
+    margin: 0 10px;
 }
 
 /* message */
@@ -83,6 +100,7 @@ textarea{
     border-radius: 6px;
     margin-top: 8px;
 }
+
 
 .error{
     color: hsl(0, 66%, 54%);
