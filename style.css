@@ -102,6 +102,9 @@ label > p{
     display: inline-block;
     width: 48%;
 }
+.enquiry:hover{
+    cursor: pointer;
+}
 .queryinput{
     margin: 0 10px;
 }
