@@ -10,7 +10,8 @@ form{
     border-radius: 20px;
 
     margin: auto;
-    width: 600px;
+    max-width: 600px;
+    min-width: 300px;
     padding: 30px;
 
     display: flex;
@@ -39,10 +40,10 @@ h1{
 }
 .first_col, .second_col, .enquiry_second_col{
     display: inline-block;
-    width: 48%;
+    width: 49%;
 }
 .second_col{
-    padding-left: 4%;
+    padding-left: 3%;
 }
 
 
@@ -58,12 +59,19 @@ h1{
 input{
     border: 1px solid hsl(169, 82%, 27%);
     border-radius: 6px;
-    height: 2.2rem;
+    box-sizing: border-box;
+    height: 2.5rem;
+    font-size: 1.2rem;
+    padding: 0 0.5rem;
+
     margin: 0;
     margin-top: 8px;
 
     /* Align radio/checkbox input with text */
     vertical-align: middle;
+}
+input:focus{
+    background-color: hsl(160, 77%, 78%);
 }
 
 /* input for email */
@@ -81,6 +89,8 @@ label > p{
 }
 .query_container{
     margin-top: 8px;
+    width: 100%;
+    display: flex;
 }
 .enquiry{
     border: 1px solid hsl(169, 82%, 27%);
@@ -95,12 +105,30 @@ label > p{
 /* message */
 textarea{
     width: 100%;
-    height: 5rem;
+    height: 8rem;
+    font-size: 1.2rem;
+    box-sizing: border-box;
+    padding: 0 0.5rem;
     border: 1px solid hsl(169, 82%, 27%);
     border-radius: 6px;
     margin-top: 8px;
 }
+textarea:focus{
+    background-color: hsl(160, 77%, 78%);
+}
 
+/* consent */
+.consent_label{
+    display: flex;
+    flex-wrap: nowrap;
+}
+.consentinput{
+    vertical-align: middle;
+}
+.p_consent{
+    /* display: inline-block; */
+    margin-left: 10px;
+}
 
 .error{
     color: hsl(0, 66%, 54%);
@@ -118,7 +146,9 @@ button{
     font-family: karla;
     font-size: 17px;
 }
-
+button:hover{
+    cursor: pointer;
+}
 
 /* Footer  */
 footer{
@@ -130,3 +160,31 @@ footer{
 }
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
+
+/* For mobile */
+@media screen and (max-width: 600px) {
+    form{
+        width: 80vw;
+        margin: auto;
+    }
+
+    .two_col_row{
+        flex-wrap: wrap;
+    }
+    .first_col, .second_col, .enquiry_second_col{
+        width: 100%;
+    }
+    .second_col{
+        padding-left: 0;
+    }
+
+    /* Query Type */
+    .enquiry_second_col{
+        margin-top: 15px;
+    }
+
+    /* message */
+    textarea{
+        height: 12rem
+    }
+}

@@ -17,7 +17,7 @@
 
 </head>
 <body>
-  <form>
+  <form method="post">
     <h1>Contact Us</h1>
 
     <!-- name -->
@@ -31,7 +31,7 @@
           <input id="firstname" name="firstname" type="text" required>
 
         </label>
-        <p class="error required"></p>
+        <p class="error required" id="firstnameerror"></p>
       </div>
 
       <!-- last name -->
@@ -100,10 +100,10 @@
 
 
     <!-- consent -->
-    <div class="form_row"> 
-      <label for="consent">
+    <div class="form_row consent_div"> 
+      <label for="consent" class="consent_label">
 
-        <input id="consent" name="consent" type="checkbox" required>
+        <input id="consent" name="consent" type="checkbox" class="consentinput" required>
         <p class="p_consent">I consent to being contacted by the team <span class="required_char">*</span></p>
 
       </label>
@@ -111,7 +111,7 @@
     </div>
 
 
-    <button type="submit">Submit</button>
+    <button type="submit" onclick="validateForm()">Submit</button>
   </form>
  
   <!-- <footer class="attribution">
