@@ -17,7 +17,7 @@
 
 </head>
 <body>
-  <form method="post">
+  <form method="post" id="form" onsubmit="return validateform()">
     <h1>Contact Us</h1>
 
     <!-- name -->
@@ -28,7 +28,7 @@
         <label for="firstname">
 
           <p>First Name <span class="required_char">*</span></p>
-          <input id="firstname" name="firstname" type="text" required>
+          <input id="firstname" name="firstname" type="text">
 
         </label>
         <p class="error required" id="firstnameerror"></p>
@@ -39,7 +39,7 @@
         <label for="lastname">
 
           <p>Last Name <span class="required_char">*</span></p>
-          <input id="lastname" name="lastname" type="text" required>
+          <input id="lastname" name="lastname" type="text">
 
         </label>
         <p class="error required"></p>
@@ -52,7 +52,7 @@
       <label for="email">
 
         <p>Email Address <span class="required_char">*</span></p>
-        <input id="email" name="email" type="text" required>
+        <input id="email" name="email" type="text">
 
       </label>
       <p class="error invalid_email"></p>
@@ -103,7 +103,7 @@
     <div class="form_row consent_div"> 
       <label for="consent" class="consent_label">
 
-        <input id="consent" name="consent" type="checkbox" class="consentinput" required>
+        <input id="consent" name="consent" type="checkbox" class="consentinput">
         <p class="p_consent">I consent to being contacted by the team <span class="required_char">*</span></p>
 
       </label>
@@ -111,7 +111,7 @@
     </div>
 
 
-    <button type="submit" onclick="validateForm()">Submit</button>
+    <button type="submit">Submit</button>
   </form>
  
   <!-- <footer class="attribution">
