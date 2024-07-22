@@ -28,10 +28,10 @@
         <label for="firstname">
 
           <p>First Name <span class="required_char">*</span></p>
-          <input id="firstname" name="firstname" type="text">
+          <input id="firstname" class="" name="firstname" type="text">
 
         </label>
-        <p class="error required" id="firstnameerror"></p>
+        <p class="error" id="firstnameerror"></p>
       </div>
 
       <!-- last name -->
@@ -39,10 +39,10 @@
         <label for="lastname">
 
           <p>Last Name <span class="required_char">*</span></p>
-          <input id="lastname" name="lastname" type="text">
+          <input id="lastname" class="" name="lastname" type="text">
 
         </label>
-        <p class="error required"></p>
+        <p class="error" id="lastnameerror"></p>
       </div>
 
     </div>
@@ -52,11 +52,10 @@
       <label for="email">
 
         <p>Email Address <span class="required_char">*</span></p>
-        <input id="email" name="email" type="text">
+        <input id="email" class="" name="email" type="text">
 
       </label>
-      <p class="error invalid_email"></p>
-      <p class="error required"></p>
+      <p class="error" id="emailerror"></p>
     </div>
 
 
@@ -83,7 +82,7 @@
 
       </div>
 
-      <p class="error required_query"></p>
+      <p class="error" id="queryerror"></p>
     </div>
     
 
@@ -92,10 +91,10 @@
       <label for="message">
 
         <p>Message <span class="required_char">*</span></p>
-        <textarea id="message" name="message"></textarea>
+        <textarea id="message" class="" name="message"></textarea>
 
       </label>
-      <p class="error required"></p>
+      <p class="error" id="messageerror"></p>
     </div>
 
 
@@ -107,20 +106,12 @@
         <p class="p_consent">I consent to being contacted by the team <span class="required_char">*</span></p>
 
       </label>
-      <p class="error required_consent"></p>
+      <p class="error last_error" id="consenterror"></p>
     </div>
 
 
     <button type="submit">Submit</button>
   </form>
- 
-  <!-- <footer class="attribution">
-    <p>
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
-      Coded by <a href="#">Quentin Lee</a>.
-    </p> -->
-    
-  </footer>
 
   <script src="index.js"></script>
 </body>
