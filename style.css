@@ -15,7 +15,7 @@ form{
 
     margin: auto;
     max-width: 600px;
-    min-width: 300px;
+    min-width: 280px;
     padding: 30px;
 
     display: flex;
@@ -170,9 +170,9 @@ footer{
 
 /* For mobile */
 @media screen and (max-width: 600px) {
-    form{
-        width: 80vw;
-        margin: auto;
+    body{
+        padding: 5%;
+        height: 100%;
     }
 
     .two_col_row{
