@@ -6,8 +6,8 @@ const error_required_consent = "To submit this form, please consent to being con
 
 const form = document.getElementById("form")
 
-function validateform(){
-    let sumbitcondition = true;
+function validateform(event){
+    let submitstatus = true;
     
     let firstname = document.getElementById("firstname").value;
     let lastname = document.getElementById("lastname").value;
@@ -23,43 +23,43 @@ function validateform(){
     if(firstname == ""){
         document.getElementById("firstnameerror").innerHTML = error_required;
         document.getElementById("firstname").classList.add("error_border");
-        sumbitcondition = false;
+        submitstatus = false;
     }
     // last name
     if(lastname == ""){
         document.getElementById("lastnameerror").innerHTML = error_required;
         document.getElementById("lastname").classList.add("error_border");
-        sumbitcondition = false;
+        submitstatus = false;
     }
     // email
     if(email == ""){    // empty email
         document.getElementById("emailerror").innerHTML = error_required;
         document.getElementById("email").classList.add("error_border");
-        sumbitcondition = false;
+        submitstatus = false;
     }
     else if(email.indexOf("@") == -1){  // not empty email but does not contain @
         document.getElementById("emailerror").innerHTML = invalid_email;
         document.getElementById("email").classList.add("error_border");
-        sumbitcondition = false;
+        submitstatus = false;
     }
     // query_type
     if( !query_type_radio[0].checked && !query_type_radio[1].checked ){
         document.getElementById("queryerror").innerHTML = error_required_query;
-        sumbitcondition = false;
+        submitstatus = false;
     }
     // message
     if(message == ""){
         document.getElementById("messageerror").innerHTML = error_required;
         document.getElementById("message").classList.add("error_border");
-        sumbitcondition = false;
+        submitstatus = false;
     }
     // consent
     if(!consent.checked){
         document.getElementById("consenterror").innerHTML = error_required_consent;
-        sumbitcondition = false;
+        submitstatus = false;
     }
-
-    return sumbitcondition;
+    if(submitstatus){event.preventDefault();}
+    return submitstatus;
 }
 
 function reset_error(){
@@ -78,3 +78,8 @@ function reset_error(){
 
 
 
+console.log("test");
+setTimeout(() => {
+    console.log("test 2")
+}, 2000);
+console.log("test 3");
