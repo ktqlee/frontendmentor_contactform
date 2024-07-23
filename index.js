@@ -6,6 +6,17 @@ const error_required_consent = "To submit this form, please consent to being con
 
 const form = document.getElementById("form")
 
+form.addEventListener("submit", (event) => {
+    event.preventDefault();
+
+    if( validateform(event) ){
+        setTimeout(() => {
+            form.reset();
+        }, 3000);
+        toastmessage();
+    }
+})
+
 function validateform(event){
     let submitstatus = true;
     
@@ -58,7 +69,7 @@ function validateform(event){
         document.getElementById("consenterror").innerHTML = error_required_consent;
         submitstatus = false;
     }
-    if(submitstatus){event.preventDefault();}
+
     return submitstatus;
 }
 
@@ -76,10 +87,14 @@ function reset_error(){
     document.getElementById("message").classList.remove("error_border");
 }
 
+function toastmessage(){
+    let toast = document.getElementById("toast");
+    document.getElementById("toastmessage").innerHTML = "✅ Form Submitted !"
+    toast.style.visibility = 'visible';
+    toast.classList.add("appear_animation");
+    setTimeout(() => {
+        toast.style.visibility = 'hidden';
+        toast.classList.remove("appear_animation");
+    }, 3000);
+}
 
-
-console.log("test");
-setTimeout(() => {
-    console.log("test 2")
-}, 2000);
-console.log("test 3");

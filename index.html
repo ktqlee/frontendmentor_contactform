@@ -17,7 +17,8 @@
 
 </head>
 <body>
-  <form method="post" id="form" onsubmit="return validateform(event)">
+
+  <form method="post" id="form"> <!-- onsubmit="return validateform(event)" -->
     <h1>Contact Us</h1>
 
     <!-- name -->
@@ -112,6 +113,8 @@
 
     <button type="submit">Submit</button>
   </form>
+
+  <div class="toast" id="toast"><p class="toastmessage" id="toastmessage"></p></div>
 
   <script src="index.js"></script>
 </body>
