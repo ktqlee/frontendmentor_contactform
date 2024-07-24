@@ -15,6 +15,8 @@ This is a solution to the [Contact form challenge on Frontend Mentor](https://ww
 
 - **Hover & Focus status for interactive elements 🖱**
 
+    ![Form focus status](/readme_img/contact-form-focus.png)
+    
 - **Optimal layout for desktop and mobile 📱**
 
     ![Form mobile layout](/readme_img/contact-form-mobile-layout.png)
