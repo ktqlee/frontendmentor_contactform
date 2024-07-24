@@ -1,6 +1,6 @@
 # Frontend Mentor - Contact form solution
 
-![Screenshot of the Contact Form]()
+![Screenshot of the Contact Form](/readme_img/contact-form-img.png)
 
 ## Overview
 
@@ -10,10 +10,12 @@ This is a solution to the [Contact form challenge on Frontend Mentor](https://ww
 
 - Form validation:
   - Users will receive a error messages if a required field has been missed or the email address is not formatted correctly
+    ![Form Validation](/readme_img/contact-form-validation.png)
 - Hover & Focus status for interactive elements
-- Optimal layout for desktop and mobile 
+- Optimal layout for desktop and mobile
+    ![Form mobile layout](/readme_img/contact-form-mobile-layout.png)
 - Success toast message
-
+    ![Submit toast message](/readme_img/contact-form-submit-message.png)
 ## What I learned
 
 - To implement an optimal layout for mobile devices, I tried to use @media rule in CSS.
