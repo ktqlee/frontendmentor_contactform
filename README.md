@@ -5,7 +5,8 @@
 ## Overview
 
 This is a solution to the [Contact form challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/contact-form--G-hYlqKJj). In this project, HTML, CSS and JavaScript is used to set up this contact form.
-[Live Site Link](https://ktqlee.github.io/frontendmentor_contactform/).
+
+🖥 [Live Site Link](https://ktqlee.github.io/frontendmentor_contactform/).
 
 ## Features
 
