@@ -10,20 +10,20 @@ This is a solution to the [Contact form challenge on Frontend Mentor](https://ww
 
 ## Features
 
-- **Form validation ✔**:
+### - **Form validation ✔**:
   - Users will receive a error messages if a required field has been missed or the email address is not formatted correctly
 
     ![Form Validation](/readme_img/contact-form-validation.png)
 
-- **Hover & Focus status for interactive elements 🖱**
+### - **Hover & Focus status for interactive elements 🖱**
 
     ![Form focus status](/readme_img/contact-form-focus.png)
     
-- **Optimal layout for desktop and mobile 📱**
+### - **Optimal layout for desktop and mobile 📱**
 
     ![Form mobile layout](/readme_img/contact-form-mobile-layout.png)
 
-- **Success toast message ✅**
+### - **Success toast message ✅**
 
     ![Submit toast message](/readme_img/contact-form-submit-message.png)
 
